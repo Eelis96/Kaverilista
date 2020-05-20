@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaverilista</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/united/bootstrap.min.css" rel="stylesheet" integrity="sha384-bzjLLgZOhgXbSvSc5A9LWWo/mSIYf7U7nFbmYIB2Lgmuiw3vKGJuu+abKoaTx4W6" crossorigin="anonymous">
+</head>
+<body>
+    <header id="main-header" class="bg-success text-white p-4 mb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Kaverilista</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container" id="main">
+        <h2>Lisää Kaveri</h2>
+        <form name="newItem" id="newItemForm" class="form-inline mb-3">
+            <input name="itemName" id="newItemName" type="text" class="form-control mr-2">
+            <input type="submit" class="btn btn-success" value="Lisää">
+        </form>
+        <span id="info"></span>
+        <h2>Kaverit</h2>
+        <ul id="items" class="list-group">
+            <li class="list-group-item">Soini <button class="btn btn-danger btn-sm float-right delete">X</button></li>
+        </ul>
+    </section>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
